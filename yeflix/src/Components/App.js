@@ -1,13 +1,18 @@
-import Router from "Components/Router";
+import React from "react";
+import Router from "./Router";
+import Header from "./Header";
 
-function App() {
+
+const App= ()=> {
  
-  return (
+  return(
     <>
+      <Header/>
       <Router/>
     </>
   );
-  
-}
+};
 
 export default App;
+
+
