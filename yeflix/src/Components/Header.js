@@ -1,19 +1,29 @@
 import React from "react";
-
+import {Link} from "react-router-dom";
+import styled from "styled-components";
+const Header=styled.header``;
+const List=styled.ul`
+  display:flex;
+  &:hover{
+    background-color:blue;
+  }
+`;
+const Item=styled.li``;
+const SLink=styled(Link)``;
 export default ()=>(
  <header>
-   <ul>
-     <li>
-       <a href="/">Movies</a>
-     </li>
-     <li>
-       <a href="/tv">TV</a>
-     </li>
-     <li>
-       <a href="/search">Search</a>
-     </li>
+   <List>
+     <Item>
+       <SLink href="/">Movies</SLink>
+     </Item>
+     <Item>
+       <SLink href="/tv">TV</SLink>
+     </Item>
+     <Item>
+       <SLink href="/serch">Serch</SLink>
+     </Item>
 
-   </ul>
+   </List>
  </header>
 );
 
