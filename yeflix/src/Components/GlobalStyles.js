@@ -1,6 +1,6 @@
 import {createGlobalStyle} from "styled-components";
 import reset from "styled-reset";
-export default ()=>createGlobalStyle`
+const globalStyles =createGlobalStyle`
     ${reset};
     a{
         text-decoration:none;
@@ -17,3 +17,5 @@ export default ()=>createGlobalStyle`
         padding-top:50px;
     }
 `;
+
+export default globalStyles;
